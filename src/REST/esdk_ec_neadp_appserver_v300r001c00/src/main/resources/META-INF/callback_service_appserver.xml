@@ -1,0 +1,6 @@
+<callback-services>
+	<callback-service>
+		<service-id>appserver</service-id>
+		<service-spring-id>appServerCallbackService</service-spring-id>
+	</callback-service>
+</callback-services>

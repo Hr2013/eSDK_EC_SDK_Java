@@ -1,0 +1,18 @@
+
+ext.zipFileName = 'esdksvr_ec_neadp_eserver_v300r001c00'
+
+// config for obfuscate
+
+addDependentProject(project, "compile", "esdk_platform_common")
+addDependentProject(project, "compile", "esdk_platform_interface")
+addDependentProject(project, "compile", "esdk_ec_base")
+addDependentProject(project, "compile", "esdk_ec_domain")
+addDependentProject(project, "compile", "esdk_ec_neadp_interface")
+
+dependencies {
+	compile ':log4j:1.2.16'
+	compile ':eServer:'
+	compile ':eServerSDK:'
+	compile ':mtk:'
+	compile ':gson:2.2.2'
+}

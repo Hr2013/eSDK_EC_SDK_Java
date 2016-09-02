@@ -1,0 +1,5 @@
+<applications>
+	<application>com.huawei.esdk.ec.north.rest.app.AppServerApplication</application>
+	<application>com.huawei.esdk.ec.north.rest.bmu.BMUApplication</application>
+	<application>com.huawei.esdk.ec.north.rest.eserver.EServerApplication</application>
+</applications>

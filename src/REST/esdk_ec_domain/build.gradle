@@ -1,0 +1,10 @@
+
+
+addDependentProject(project, "compile", "esdk_platform_common")
+addDependentProject(project, "compile", "esdk_platform_interface")
+addDependentProject(project, "compile", "esdk_ec_base")
+addDependentProject(project, "compile", "esdk_ec_neadp_interface")
+
+dependencies {
+	
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="error" monitorInterval="30">
+  <appenders>  
+	  <RollingFile name="infoAppender" fileName="../logfile/eServerSDK.log"  immediateFlush="true"
+	        filePattern="../logfile/eServerSDK/$${date:yyyy-MM}/eServerSDK-%i.log.gz">
+	  <PatternLayout pattern="%n%d{yyyy-MM-dd HH:mm:ss SSS} [%l]%n[%p]%1x %m %n"/>
+	      <SizeBasedTriggeringPolicy size="10 MB" />
+	      <DefaultRolloverStrategy max="100"/>
+	  </RollingFile>
+  </appenders>
+  
+    <loggers>
+		<!-- infoAppender -->
+		<AsyncLogger name="infoLogger" level="debug" additivity="false" includeLocation="true">  
+			<appender-ref ref="infoAppender"/>
+		</AsyncLogger>
+		<root level="debug">
+            <appender-ref ref="infoAppender"/>
+        </root>
+	</loggers>
+</configuration>

@@ -1,0 +1,8 @@
+dependencies {
+	compile ':gson:2.2.2'
+	compile ':log4j:1.2.16'
+	compile ':httpclient:4.2.3'
+	compile ':httpcore:4.2.2'
+	compile ':httpmime:4.2.3'
+	compile ':commons-logging-1.1.1'
+}

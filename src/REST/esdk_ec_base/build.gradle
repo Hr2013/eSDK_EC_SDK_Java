@@ -1,0 +1,19 @@
+
+ext.zipFileName = 'esdksvr_ec_base_component'
+
+ext.zipProjectDirs = ["esdk_ec_domain", "esdk_ec_neadp_interface", "esdk_ec_base"]
+
+addDependentProject(project, "compile", "esdk_platform_common")
+addDependentProject(project, "compile", "esdk_platform_interface")
+
+dependencies {
+	compile ':commons-beanutils:1.9.1'
+	compile ':log4j:1.2.16'
+	compile ':servlet-api'
+	compile ':gson:2.2.2'
+	compile ':cxf-core:3.0.9'
+	compile ':cxf-rt-bindings-soap:3.0.9'
+	compile ':spring-core:4.1.6.RELEASE'
+	compile ':spring-beans:4.1.6.RELEASE'
+	compile ':spring-context:4.1.6.RELEASE'
+}
